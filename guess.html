@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Guess the number</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    #typing{
+      display: none;
+        }
+    </style>
+
+ 
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h2 class="text-center">Guess the number!</h2>
+      </div>
+    
+      <section class="text-center">
+      <label for="#range_list">Choose range:</label>
+        <select id="range_list">
+        <option value="10" selected>10</option>
+        <option value="100">100</option>
+        <option value="1000">1000</option>
+        
+        </select>
+      <button id="button_range" class="btn btn-info">Choose</button><br><br><br><br>
+
+      <div id="typing">
+      <input type="text" id="number" size="20" placeholder="type number here:">
+      <button id="check_num" class="btn btn-info">Try!</button><br>
+      Tries: <div id="tries"> </div><br>
+      <div id="tip"></div>
+      </div>
+      </section>
+      
+
+   
+
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/guess.js"></script>
+  </body>
+</html>

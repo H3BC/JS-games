@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Simple JS games</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+   #word{
+    letter-spacing: 10px;
+   }
+   #panel{
+    display: none;
+   }
+   #image{
+    display: none;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+       <h2 class="text-center">Hangman</h2>
+      </div>
+     <div class="text-center"><button id="start_button" class="btn btn-lg btn-info">Start game</button></div>
+    </div>
+    <h2 class="text-center" id="word"></h2><br><br><br>
+  
+
+    <div class="container">
+    <img src="images/stage1.png" class="pull-left img-responsive" id="image">
+    <div id="panel" class="text-center">
+    <label for="typing">Type your letter here:</label>
+    <input type="text" id="typing" maxlength="1" size="10">
+    <button class="btn btn-md btn-info" id="check">Check!</button><br>
+    <div id="lives"></div>
+    </div>
+
+    </div>
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hangman.js"></script>
+  </body>
+</html>
+
