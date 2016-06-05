@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tic tac toe</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+  #box{
+    width: 310px;
+    height: 310px;
+    border: 1px solid black;
+    margin: auto;
+    
+
+
+  }
+  .button{
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    font-size: 60px;
+    
+     }
+     td{
+      height: 100px;
+      width: 100px;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 65px;
+      border-collapse: collapse;
+      border: 2px solid #B9E9F0;
+      text-transform: uppercase;
+      color: black;
+     }
+
+</style>
+  </head>
+  <body>
+    
+      <div class="container">
+        <div class="well">
+          <h2 class="text-center">Tic Tac Toe</h2>
+        </div>
+      </div>
+      <div class="container">
+        <table id="box">
+          <tr>
+            <td id="btn1"></td>
+            <td id="btn2"></td>
+            <td id="btn3"></td>
+          </tr>
+          <tr>
+            <td id="btn4"></td>
+            <td id="btn5"></td>
+            <td id="btn6"></td>
+          </tr>
+          <tr>
+            <td id="btn7"></td>
+            <td id="btn8"></td>
+            <td id="btn9"></td>
+          </tr>
+        </table>
+         <!-- <div id="box">
+        <input type="button" class="button" id="btn1">
+        <input type="button" class="button" id="btn2">
+        <input type="button" class="button" id="btn3">
+        <input type="button" class="button" id="btn4">
+        <input type="button" class="button" id="btn5">
+        <input type="button" class="button" id="btn6">
+        <input type="button" class="button" id="btn7">
+        <input type="button" class="button" id="btn8">
+        <input type="button" class="button" id="btn9">
+        </div> -->
+        <br><br>
+        <div class="text-center"><button class="btn btn-lg btn-info" id="reset">Reset</button></div>
+      </div>
+     
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.min.js"></script>
+    <script src="tic-tac-toe.js"></script>
+  </body>
+</html>
+
