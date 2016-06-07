@@ -1,6 +1,6 @@
 var player = 1;
 
-	
+//MARKING X OR O LETTERS ON FIELD
 boxed = function(e){
 	var btn = e.target;
 	
@@ -32,16 +32,18 @@ ifWin = function(){
 	if (resault == 1){
 		alert("'X' Wins!")
 		resetFields();
+		return resetFields();
 	}
 	else if(resault == -1){
 		alert("'O' Wins!");
-		resetFields();
+		return resetFields();
 	}
 	else{
-		return 0;
+		return;
 	}
 }
 
+//TRYING ALL POSSIBLE WINNING SCENARIOS
 checking = function(){
 	var btn1 = document.getElementById('btn1').innerHTML;
 	var btn2 = document.getElementById('btn2').innerHTML;
